@@ -1,3 +1,7 @@
+# Voice Memos to Text Service
+
+Upload [Voice Memos](https://support.apple.com/guide/voice-memos/welcome/mac) for macOS Ventura to an S3 Bucket.
+
 # AWS CloudFormation Action for GitHub Actions React Starter
 
 This starter template contains a bootstrapped [Create React App](https://github.com/facebook/create-react-app) with a GitHub Workflow that deploys the app to the [AWS Amplify Console](https://aws.amazon.com/amplify/console/) using the [AWS CloudFormation Action for GitHub Actions](https://github.com/marketplace/actions/aws-cloudformation-deploy-cloudformation-stack-action-for-github-actions).
@@ -22,7 +26,7 @@ When you create a new repository from the template, the GitHub Workflow is not s
 2. Create a [new IAM user in your AWS account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) with **Programmatic Access** and store the access key ID as `AWS_ACCESS_KEY_ID` and secret access key as `AWS_SECRET_ACCESS_KEY` as secrets in your new repository.
 3. (Optional) Configure a [custom domain](https://docs.aws.amazon.com/amplify/latest/userguide/custom-domains.html) for your app by setting the `AMPLIFY_DOMAIN` secret.
 
-You need to run the **Manual Deploy** workflow to deploy it. You find the workflow by clicking *Actions* > *Manual Deploy* > *Run workflow*. When the popover opens, click **Run workflow** to trigger the deployment.
+You need to run the **Manual Deploy** workflow to deploy it. You find the workflow by clicking _Actions_ > _Manual Deploy_ > _Run workflow_. When the popover opens, click **Run workflow** to trigger the deployment.
 
 > The manual triggers is a feature [recently announced](https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/) and avoids running the build process both on GitHub Action and AWS Amplify
 > The stack is deployed to `us-east-1` by default. Please change it to the region you want to deploy this to.
